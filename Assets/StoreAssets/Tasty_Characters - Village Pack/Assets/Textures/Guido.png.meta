@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: 937e5040e80ed794b80f02d1f32f6f01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8703700980990358183
+    second: Guido_0
+  - first:
+      213: 5235228226388798871
+    second: Guido_1
+  - first:
+      213: -751276638923915859
+    second: Guido_2
+  - first:
+      213: 4519495905282895
+    second: Guido_3
+  - first:
+      213: -60098142812009259
+    second: Guido_4
+  - first:
+      213: 5030257660338675988
+    second: Guido_5
+  - first:
+      213: -7518243918998626912
+    second: Guido_6
+  - first:
+      213: -1497328383633664415
+    second: Guido_7
+  - first:
+      213: -6606941707942430465
+    second: Guido_8
+  - first:
+      213: -7547903081095277865
+    second: Guido_9
+  - first:
+      213: 4086646054728929801
+    second: Guido_10
+  - first:
+      213: -6868708799075644994
+    second: Guido_11
+  - first:
+      213: -1442370181976253348
+    second: Guido_12
+  - first:
+      213: 2536613250834557242
+    second: Guido_13
+  - first:
+      213: 4250201883890351624
+    second: Guido_14
+  - first:
+      213: -8041697885947447524
+    second: Guido_15
+  - first:
+      213: 955525272718167087
+    second: Guido_16
+  - first:
+      213: 2813930288083208998
+    second: Guido_17
+  - first:
+      213: -7067414274366932567
+    second: Guido_18
+  - first:
+      213: -3556167195818113274
+    second: Guido_19
+  - first:
+      213: 1292878078329106109
+    second: Guido_20
+  - first:
+      213: 8731491946503974879
+    second: Guido_21
+  - first:
+      213: -7054570635001449912
+    second: Guido_22
+  - first:
+      213: -107430053660080184
+    second: Guido_23
+  - first:
+      213: 7724606980419785563
+    second: Guido_24
+  - first:
+      213: -5711992815596724862
+    second: Guido_25
+  - first:
+      213: -20131698814109649
+    second: Guido_26
+  - first:
+      213: 4212359904955840381
+    second: Guido_27
+  - first:
+      213: 2846946029712579034
+    second: Guido_28
+  - first:
+      213: -4479357597202131047
+    second: Guido_29
+  - first:
+      213: 7832239350906144164
+    second: Guido_30
+  - first:
+      213: 3687361899416664711
+    second: Guido_31
+  - first:
+      213: 8481317946031594195
+    second: Guido_32
+  - first:
+      213: 4066528546592673321
+    second: Guido_33
+  - first:
+      213: -4140028276228974061
+    second: Guido_34
+  - first:
+      213: -5969777002506200533
+    second: Guido_35
+  - first:
+      213: -8896213390481487849
+    second: Guido_36
+  - first:
+      213: 7078576654661439467
+    second: Guido_37
+  - first:
+      213: -6636276016142556204
+    second: Guido_38
+  - first:
+      213: -1066077262497225421
+    second: Guido_39
+  - first:
+      213: -1192597372764045187
+    second: Guido_40
+  - first:
+      213: -220505347887048197
+    second: Guido_41
+  - first:
+      213: -8380275314449764433
+    second: Guido_42
+  - first:
+      213: 6070874510783445360
+    second: Guido_43
+  - first:
+      213: 5379103938841768906
+    second: Guido_44
+  - first:
+      213: -5687190066385734125
+    second: Guido_45
+  - first:
+      213: -1532920661133042373
+    second: Guido_46
+  - first:
+      213: 1610979320938982459
+    second: Guido_47
+  - first:
+      213: -4489397013196368639
+    second: Guido_48
+  - first:
+      213: 3468085362353125307
+    second: Guido_49
+  - first:
+      213: 2095474991265329631
+    second: Guido_50
+  - first:
+      213: 6090268458392820653
+    second: Guido_51
+  - first:
+      213: 4407521994110441233
+    second: Guido_52
+  - first:
+      213: 6650740155062895288
+    second: Guido_53
+  - first:
+      213: -7428937922095390270
+    second: Guido_54
+  - first:
+      213: -278380637652720044
+    second: Guido_55
+  - first:
+      213: 7031667437842943472
+    second: Guido_56
+  - first:
+      213: -6494458827457658450
+    second: Guido_57
+  - first:
+      213: -2328670191265182627
+    second: Guido_58
+  - first:
+      213: 5394908701862643912
+    second: Guido_59
+  - first:
+      213: 1125677897900232336
+    second: Guido_60
+  - first:
+      213: -2978172662973154754
+    second: Guido_61
+  - first:
+      213: -4791571777192567345
+    second: Guido_62
+  - first:
+      213: -5418432348109711329
+    second: Guido_63
+  - first:
+      213: -3980348437036609094
+    second: Guido_64
+  - first:
+      213: -7699667832553739300
+    second: Guido_65
+  - first:
+      213: -8234095559906536236
+    second: Guido_66
+  - first:
+      213: -3976279709885829376
+    second: Guido_67
+  - first:
+      213: 1427278818037715045
+    second: Guido_68
+  - first:
+      213: 7814022786490162252
+    second: Guido_69
+  - first:
+      213: -5021334289546478967
+    second: Guido_70
+  - first:
+      213: -4081383025142603799
+    second: Guido_71
+  - first:
+      213: 3395538031742146696
+    second: Guido_72
+  - first:
+      213: 2172148581312636218
+    second: Guido_73
+  - first:
+      213: 2319588710641356908
+    second: Guido_74
+  - first:
+      213: 1376082736492744207
+    second: Guido_75
+  - first:
+      213: 5879085821066570800
+    second: Guido_76
+  - first:
+      213: 1282446719390813715
+    second: Guido_77
+  - first:
+      213: 8281038227139909546
+    second: Guido_78
+  - first:
+      213: 5346751009570603400
+    second: Guido_79
+  - first:
+      213: 5467860848441427771
+    second: Guido_80
+  - first:
+      213: 4305528554880407650
+    second: Guido_81
+  - first:
+      213: 468551113598519420
+    second: Guido_82
+  - first:
+      213: 6816362863710700446
+    second: Guido_83
+  - first:
+      213: 4101208514524518083
+    second: Guido_84
+  - first:
+      213: -1566828624011694435
+    second: Guido_85
+  - first:
+      213: 1249593697549904682
+    second: Guido_86
+  - first:
+      213: -3473743735686779648
+    second: Guido_87
+  - first:
+      213: 8299984585823429520
+    second: Guido_88
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Guido_0
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 715
+        width: 67
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dc9dc621e363780800000000000000
+      internalID: -8703700980990358183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guido_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 650
+        width: 5
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79da000a55447a840800000000000000
+      internalID: 5235228226388798871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guido_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 650
+        width: 5
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadf3e890ede295f0800000000000000
+      internalID: -751276638923915859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guido_3
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 768
+        width: 73
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b8ff3257e001000800000000000000
+      internalID: 4519495905282895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guido_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 803
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc870abe0d7a2ff0800000000000000
+      internalID: -60098142812009259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guido_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 785
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411ac2dc0b01fc540800000000000000
+      internalID: 5030257660338675988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guido_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 773
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad98513df4d9a790800000000000000
+      internalID: -7518243918998626912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guido_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 717
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166d76da4cb683be0800000000000000
+      internalID: -1497328383633664415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guido_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 714
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8f06e858d6f44a0800000000000000
+      internalID: -6606941707942430465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
