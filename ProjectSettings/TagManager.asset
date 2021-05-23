@@ -7,6 +7,8 @@ TagManager:
   - NPC
   - Background
   - Enemy
+  - EnemyHit
+  - HP
   layers:
   - Default
   - TransparentFX

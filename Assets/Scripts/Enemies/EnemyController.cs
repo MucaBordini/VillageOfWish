@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ public class EnemyController : MonoBehaviour
     float movement;
     float velocity = 1f;
     bool moveRight = true;
+
     // Start is called before the first frame update
     void Start()
     {

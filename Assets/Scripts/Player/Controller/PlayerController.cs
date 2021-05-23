@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public LayerMask enemyLayer;
     public float velocidade = 1f;
     public float JumpForce = 1f;
     float movement = 0f;
@@ -11,6 +12,20 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     public bool floor = false;
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "HP")
+        {
+            if (PlayerStats.getIstance().getHealthPoints() < 3)
+            {
+                //Debug.Log("CHAMOU!");
+                PlayerStats.getIstance().healthGain();
+                Destroy(collision.gameObject);
+            }
+                //Debug.Log("Vida esta cheia!");
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag != "Enemy")
@@ -18,7 +33,19 @@ public class PlayerController : MonoBehaviour
             transform.parent = collision.collider.transform;
             floor = true;
         }
-        
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            
+            if (PlayerStats.getIstance().getHealthPoints() >= 1)
+            {
+                PlayerStats.getIstance().healthLoss();
+                Destroy(collision.gameObject);
+            }
+            //else
+            //    Debug.Log("Voce morreu!");
+        }
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -37,6 +64,18 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //Detecta cabeça do inimigo
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.2f, enemyLayer);
+
+        if (hit && hit.collider.CompareTag("Enemy"))
+        {
+                hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                hit.collider.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+                hit.collider.gameObject.transform.Rotate(0, 0, 180);
+           
+            hit.collider.gameObject.transform.position += new Vector3(15, 80, 0f) * Time.deltaTime;
+        }
 
         movement = Input.GetAxisRaw("horizontal") * velocidade * Time.deltaTime;
         anim.SetFloat("Speed", Mathf.Abs(movement));
