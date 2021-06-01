@@ -716,7 +716,6 @@ GameObject:
   - component: {fileID: 2862594514968272447}
   - component: {fileID: 4867638703064183170}
   - component: {fileID: 4867638703064183180}
-  - component: {fileID: 4867638703064183171}
   - component: {fileID: 4867638703064183168}
   m_Layer: 10
   m_Name: VillageBoss
@@ -780,35 +779,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.14, y: 0.55}
+  m_Offset: {x: 0.1, y: 0.74}
   serializedVersion: 2
-  m_Radius: 0.31
---- !u!61 &4867638703064183171
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7439686237705235198}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.09, y: 0.89}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.24, y: 0.81}
-  m_EdgeRadius: 0
+  m_Radius: 0.54
 --- !u!95 &4867638703064183168
 Animator:
   serializedVersion: 3
@@ -869,8 +842,6 @@ GameObject:
   - component: {fileID: 4219007151727542831}
   - component: {fileID: 1299594051664789702}
   - component: {fileID: 6471854653303145501}
-  - component: {fileID: 4867638703052900243}
-  - component: {fileID: 4867638703052900252}
   m_Layer: 10
   m_Name: Cabeca
   m_TagString: Untagged
@@ -964,41 +935,3 @@ MonoBehaviour:
     m_Extent: {x: 0.44492, y: 0.28495497, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
---- !u!61 &4867638703052900243
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7972858858402522102}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.12, y: 0.22}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.89, y: 0.57}
-    newSize: {x: 0.89, y: 0.57}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.62, y: 0.09}
-  m_EdgeRadius: 0
---- !u!114 &4867638703052900252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7972858858402522102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be563b348038de448cf728b9bad3fa8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

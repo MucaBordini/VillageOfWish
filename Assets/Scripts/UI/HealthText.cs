@@ -16,6 +16,6 @@ public class HealthText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hpText.text = "Health Points: " + PlayerStats.getIstance().getHealthPoints();
+        hpText.text = " = " + PlayerStats.getIstance().getHealthPoints();
     }
 }

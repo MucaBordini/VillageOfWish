@@ -1,29 +1,49 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    private AudioSource sounds;
+    public AudioClip coinSound;
+    public AudioClip healthSound;
+    public AudioClip hurtSound;
+    public AudioClip enemySound;
+    public AudioClip fallDeath;
     public LayerMask enemyLayer;
     public float velocidade = 1f;
     public float JumpForce = 1f;
+    public float damageForce = 1f;
     float movement = 0f;
-    public Rigidbody2D rb2d;
+    private Rigidbody2D rb2d;
     Animator anim;
     public bool floor = false;
+    private bool playedFall;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "HP")
         {
+            sounds.PlayOneShot(healthSound);
+            Destroy(collision.gameObject);
             if (PlayerStats.getIstance().getHealthPoints() < 3)
             {
-                //Debug.Log("CHAMOU!");
                 PlayerStats.getIstance().healthGain();
-                Destroy(collision.gameObject);
+            } else
+            {
+                PopUpText.fillPopUp("Vida cheia!");
+                StartCoroutine(WaitPopUp());
             }
-                //Debug.Log("Vida esta cheia!");
+        } else if (collision.gameObject.tag == "Points")
+        {
+            sounds.PlayOneShot(coinSound);
+            PlayerStats.getIstance().addPoints();
+            Destroy(collision.gameObject);
+        } else if (collision.gameObject.tag == "EndOfLevel")
+        {
+            SceneManager.LoadScene(2);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -39,8 +59,18 @@ public class PlayerController : MonoBehaviour
             
             if (PlayerStats.getIstance().getHealthPoints() >= 1)
             {
+                sounds.PlayOneShot(hurtSound);
                 PlayerStats.getIstance().healthLoss();
                 Destroy(collision.gameObject);
+                if(transform.eulerAngles.y == 180)
+                {
+                    rb2d.AddForce(new Vector2(-damageForce, 0), ForceMode2D.Impulse);
+                } else
+                {
+                    rb2d.AddForce(new Vector2(damageForce, 0), ForceMode2D.Impulse);
+                }
+                
+                
             }
             //else
             //    Debug.Log("Voce morreu!");
@@ -59,22 +89,47 @@ public class PlayerController : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        sounds = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        if ((PlayerStats.getIstance().getHealthPoints() == 0) || transform.position.y < -8)
+        {
+            Time.timeScale = 1;
+            PlayerStats.getIstance().healthReset();
+            if(PlayerStats.getIstance().getPoints() < 100)
+            {
+                PlayerStats.getIstance().bonusPoints();
+            }
+            if (transform.position.y < -6.20f)
+            {
+                if (playedFall == false)
+                {
+                    sounds.PlayOneShot(fallDeath);
+                    playedFall = true;
+                }
+                StartCoroutine(WaitFall());
+            } else
+            {
+                SceneManager.LoadScene(2);
+            }
+           
+            
+        }
+
         //Detecta cabeça do inimigo
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.2f, enemyLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.5f, enemyLayer);
 
         if (hit && hit.collider.CompareTag("Enemy"))
         {
-                hit.collider.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-                hit.collider.gameObject.GetComponent<CircleCollider2D>().enabled = false;
-                hit.collider.gameObject.transform.Rotate(0, 0, 180);
-           
+            sounds.PlayOneShot(enemySound);
+            hit.collider.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            hit.collider.gameObject.transform.Rotate(0, 0, 180);
             hit.collider.gameObject.transform.position += new Vector3(15, 80, 0f) * Time.deltaTime;
+            rb2d.AddForce(new Vector2(0, 10), ForceMode2D.Impulse);
         }
 
         movement = Input.GetAxisRaw("horizontal") * velocidade * Time.deltaTime;
@@ -90,6 +145,20 @@ public class PlayerController : MonoBehaviour
         {
             rb2d.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
         }
+    }
+
+    IEnumerator WaitPopUp()
+    {
+        yield return new WaitForSeconds(3f);
+        PopUpText.fillPopUp("");
+
+    }
+
+    IEnumerator WaitFall()
+    {
+        
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(2);
     }
 
 }

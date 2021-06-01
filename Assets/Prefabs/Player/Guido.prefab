@@ -138,7 +138,6 @@ GameObject:
   - component: {fileID: 5626422900704070379}
   - component: {fileID: 5752710273187965364}
   - component: {fileID: 5752710273187965322}
-  - component: {fileID: 5752710273187965365}
   - component: {fileID: 5752710273187965361}
   - component: {fileID: 5752710273187965366}
   m_Layer: 0
@@ -203,35 +202,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.48}
+  m_Offset: {x: 0.02, y: 0.51}
   serializedVersion: 2
   m_Radius: 0.42
---- !u!61 &5752710273187965365
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2599271584686119479}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.04, y: 0.6887299}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.63, y: 0.9025402}
-  m_EdgeRadius: 0
 --- !u!95 &5752710273187965361
 Animator:
   serializedVersion: 3
@@ -263,9 +236,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d3a8181cdf7154a91b1f00c4d820e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinSound: {fileID: 0}
+  healthSound: {fileID: 0}
+  hurtSound: {fileID: 0}
+  enemySound: {fileID: 0}
+  fallDeath: {fileID: 0}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
   velocidade: 5
   JumpForce: 7
-  rb2d: {fileID: 0}
+  damageForce: 1
+  floor: 0
 --- !u!1 &3197763728840588120
 GameObject:
   m_ObjectHideFlags: 0

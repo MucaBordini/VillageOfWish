@@ -3,7 +3,7 @@
 
     private static PlayerStats instance;
     private int healthPoints = 3;
-    private int practicePoints = 0;
+    private int points = 500;
 
     private PlayerStats()
     {
@@ -22,9 +22,9 @@
         return healthPoints;
     }
 
-    public int getPracticePoints()
+    public int getPoints()
     {
-        return practicePoints;
+        return points;
     }
 
     public void healthLoss()
@@ -34,7 +34,7 @@
 
     public void healthGain()
     {
-        healthPoints++;
+         healthPoints++;
     }
 
     public void healthReset()
@@ -42,8 +42,16 @@
         healthPoints = 3;
     }
 
-    public void addPracticePoints()
+    public void addPoints()
     {
-        practicePoints += 100;
+        points += 50;
+    }
+    public void bonusPoints()
+    {
+        points += 100;
+    }
+    public void usePoints()
+    {
+        points -= 100;
     }
 }

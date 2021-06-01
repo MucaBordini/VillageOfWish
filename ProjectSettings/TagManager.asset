@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - EnemyHit
   - HP
+  - Points
+  - EndOfLevel
   layers:
   - Default
   - TransparentFX

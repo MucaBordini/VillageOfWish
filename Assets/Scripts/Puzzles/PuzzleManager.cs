@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class PuzzleManager : MonoBehaviour
 {
+    private AudioSource sounds;
+    public AudioClip rightAnswerSound;
+    public AudioClip wrongAnswerSound;
+
     public Text questionText;
     public Text answer1Text;
     public Text answer2Text;
@@ -15,6 +19,7 @@ public class PuzzleManager : MonoBehaviour
     public Button btn2;
     public Button btn3;
     public Button btn4;
+    public Button ajuda;
 
     public Animator animator;
 
@@ -27,14 +32,105 @@ public class PuzzleManager : MonoBehaviour
 
     private GameObject enemy;
 
-    void WrongAnwserResponse()
+    List<int> cantBeThisValues = new List<int>();
+    private int helpCalls = 0;
+
+    void WrongAnwserResponse(Button btnWrong)
     {
-        Debug.Log("ERROU!");
+        PopUpText.fillPopUp("Resposta Errada!!!");
+        paintButtons(btnWrong);
+        sounds.PlayOneShot(wrongAnswerSound);
+        PlayerStats.getIstance().healthLoss();
     }
     void RightAnwserResponse()
     {
-        Debug.Log("ACERTOU!");
+        sounds.PlayOneShot(rightAnswerSound);
+        PlayerStats.getIstance().addPoints();
         DisplayNextQuestion();
+    }
+
+    void ResetButtonColor()
+    {
+        ColorBlock colors1 = btn1.colors;
+        ColorBlock colors2 = btn2.colors;
+        ColorBlock colors3 = btn3.colors;
+        ColorBlock colors4 = btn4.colors;
+        colors1.normalColor = Color.white;
+        colors2.normalColor = Color.white;
+        colors3.normalColor = Color.white;
+        colors4.normalColor = Color.white;
+
+        btn1.colors = colors1;
+        btn2.colors = colors2;
+        btn3.colors = colors3;
+        btn4.colors = colors4;
+    }
+
+    void paintButtons(Button btn)
+    {
+        ColorBlock colors = btn.colors;
+        colors.normalColor = Color.red;
+        btn.colors = colors;
+    }
+
+    bool verifyHelp(int value, List<int> listOfValues)
+    {
+        if (listOfValues.Contains(value))
+            return true;
+        else
+            return false;
+    }
+
+    void HelpButton(int rightAns)
+    {
+        helpCalls++;
+        if (helpCalls <= 2)
+        {
+            if (!cantBeThisValues.Contains(rightAns))
+            {
+                cantBeThisValues.Add(rightAns);
+            }
+
+            if (PlayerStats.getIstance().getPoints() < 100)
+            {
+                PopUpText.fillPopUp("Pontos insuficientes! São necessários no mínimo 100 pontos para pedir ajuda!");
+                StartCoroutine(WaitPopUp());
+            }
+            else
+            {
+                PlayerStats.getIstance().usePoints();
+                int randomNumber = Random.Range(1, 4);
+                while (verifyHelp(randomNumber, cantBeThisValues))
+                {
+                    randomNumber = Random.Range(1, 4);
+                }
+                switch (randomNumber)
+                {
+                    case 1:
+                        paintButtons(btn1);
+                        break;
+                    case 2:
+                        paintButtons(btn2);
+                        break;
+                    case 3:
+                        paintButtons(btn3);
+                        break;
+                    case 4:
+                        paintButtons(btn4);
+                        break;
+                }
+                cantBeThisValues.Add(randomNumber);
+            }
+        }
+        else if (helpCalls == 20)
+        {
+            PopUpText.fillPopUp("Você não cansa de apertar esse botão?");
+        }
+        else
+        {
+            PopUpText.fillPopUp("Já utilizou todas as ajudas!");
+        }
+        
     }
 
     void RemoveAllButtonListeners()
@@ -43,6 +139,7 @@ public class PuzzleManager : MonoBehaviour
         btn2.onClick.RemoveAllListeners();
         btn3.onClick.RemoveAllListeners();
         btn4.onClick.RemoveAllListeners();
+        ajuda.onClick.RemoveAllListeners();
     }
 
     void Start()
@@ -53,7 +150,7 @@ public class PuzzleManager : MonoBehaviour
         answers3queue = new Queue<string>();
         answers4queue = new Queue<string>();
         rightAnswerqueue = new Queue<int>();
-
+        sounds = GetComponent<AudioSource>();
     }
 
     public void StartPuzzle (Puzzle puzzle, Answers answers, GameObject enemy)
@@ -103,7 +200,12 @@ public class PuzzleManager : MonoBehaviour
 
     public void DisplayNextQuestion()
     {
+        ResetButtonColor();
         RemoveAllButtonListeners();
+        cantBeThisValues.Clear();
+        helpCalls = 0;
+
+        PopUpText.fillPopUp("");
 
         if (questions.Count == 0)
         {
@@ -126,31 +228,33 @@ public class PuzzleManager : MonoBehaviour
         if (rightAns == 1)
         {
             btn1.onClick.AddListener(RightAnwserResponse);
-            btn2.onClick.AddListener(WrongAnwserResponse);
-            btn3.onClick.AddListener(WrongAnwserResponse);
-            btn4.onClick.AddListener(WrongAnwserResponse);
+            btn2.onClick.AddListener(delegate { WrongAnwserResponse(btn2); });
+            btn3.onClick.AddListener(delegate { WrongAnwserResponse(btn3); });
+            btn4.onClick.AddListener(delegate { WrongAnwserResponse(btn4); });
         }
         else if (rightAns == 2)
         {
-            btn1.onClick.AddListener(WrongAnwserResponse);
+            btn1.onClick.AddListener(delegate { WrongAnwserResponse(btn1); });
             btn2.onClick.AddListener(RightAnwserResponse);
-            btn3.onClick.AddListener(WrongAnwserResponse);
-            btn4.onClick.AddListener(WrongAnwserResponse);
+            btn3.onClick.AddListener(delegate { WrongAnwserResponse(btn3); });
+            btn4.onClick.AddListener(delegate { WrongAnwserResponse(btn4); });
         }
         else if (rightAns == 3)
         {
-            btn1.onClick.AddListener(WrongAnwserResponse);
-            btn2.onClick.AddListener(WrongAnwserResponse);
+            btn1.onClick.AddListener(delegate { WrongAnwserResponse(btn1); });
+            btn2.onClick.AddListener(delegate { WrongAnwserResponse(btn2); });
             btn3.onClick.AddListener(RightAnwserResponse);
-            btn4.onClick.AddListener(WrongAnwserResponse);
+            btn4.onClick.AddListener(delegate { WrongAnwserResponse(btn4); });
         }
         else if (rightAns == 4)
         {
-            btn1.onClick.AddListener(WrongAnwserResponse);
-            btn2.onClick.AddListener(WrongAnwserResponse);
-            btn3.onClick.AddListener(WrongAnwserResponse);
+            btn1.onClick.AddListener(delegate { WrongAnwserResponse(btn1); });
+            btn2.onClick.AddListener(delegate { WrongAnwserResponse(btn2); });
+            btn3.onClick.AddListener(delegate { WrongAnwserResponse(btn3); });
             btn4.onClick.AddListener(RightAnwserResponse);
         }
+
+        ajuda.onClick.AddListener(delegate { HelpButton(rightAns); });
 
     }
 
@@ -166,6 +270,13 @@ public class PuzzleManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.25f);
         Time.timeScale = 0;
+
+    }
+
+    IEnumerator WaitPopUp()
+    {
+        yield return new WaitForSeconds(3f);
+        PopUpText.fillPopUp("");
 
     }
 
