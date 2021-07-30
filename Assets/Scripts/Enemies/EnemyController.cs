@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour
     public float rightWalk;
     float initialPosition;
     float movement;
-    float velocity = 1f;
+    public float velocity = 1f;
     bool moveRight = true;
 
     // Start is called before the first frame update

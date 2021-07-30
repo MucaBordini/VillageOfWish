@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1345477995653104167}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7520473495393495449}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 3221055554302652011}
   - component: {fileID: 7610768164530672455}
   - component: {fileID: 6240142978726214367}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ombreira
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 3279169191433930928}
   - component: {fileID: 1117658431576307593}
   - component: {fileID: 647407522231037593}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Cabeca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 2402832714640337248}
   - component: {fileID: 3310527282118049052}
   - component: {fileID: 1826974812443996300}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Perna1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8819273042306168249}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3168930085723957171}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 250513709822258753}
   - component: {fileID: 6276623646383204037}
   - component: {fileID: 6753968722511608395}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Corpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,7 +545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6637008267100382041}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 5232594975492277108}
   - component: {fileID: 8227661834978591821}
   - component: {fileID: 7038725028159297199}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Braco2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,7 +682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3320526232646438736}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +718,7 @@ GameObject:
   - component: {fileID: 453195463285279905}
   - component: {fileID: 453195463285279907}
   - component: {fileID: 453195463285279933}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: CastleEnemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -817,6 +817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftWalk: 2
   rightWalk: 2
+  velocity: 1
 --- !u!1 &5756552833735181202
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,7 +829,7 @@ GameObject:
   - component: {fileID: 8033189726330497797}
   - component: {fileID: 9104637982985571810}
   - component: {fileID: 5714768264884489108}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Perna2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -929,7 +930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4346170553434784669}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,7 +963,7 @@ GameObject:
   - component: {fileID: 2374268408485480883}
   - component: {fileID: 7015825980082206532}
   - component: {fileID: 8398388766009090357}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Camada 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1064,7 +1065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1032779140180619992}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}

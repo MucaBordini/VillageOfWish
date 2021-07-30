@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8294066918279102826}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7749502476043809052}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 136965635849268867}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7935887753321115767}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 7604682899593078035}
   - component: {fileID: 3266197436429849565}
   - component: {fileID: 1837717845393378903}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: OrelhaFrente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 2075546970777981778}
   - component: {fileID: 7191424149498174726}
   - component: {fileID: 2356975055489814198}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: PernaFrente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 7938433340364760082}
   - component: {fileID: 8339180505749615724}
   - component: {fileID: 1070139427743684580}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Braco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 1454894307047087067}
   - component: {fileID: 4406125390167511880}
   - component: {fileID: 5179708467722512232}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: PernaAtras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +499,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1052205137108095495, guid: 5c2bf483de7812046aac552c3cb86a67,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -541,7 +541,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6743368060577965058}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 9151273073984026969}
   - component: {fileID: 2242118499761930345}
   - component: {fileID: 7148163029380533787}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Crina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,7 +677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2540053637747850803}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 8229866231300243615}
   - component: {fileID: 7986434421840702626}
   - component: {fileID: 7235305066391100267}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: OrelahAtras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 1291481638689555755}
   - component: {fileID: 557362803227654271}
   - component: {fileID: 7256003031614021077}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Corpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 7608329744346004631}
   - component: {fileID: 2133665107689202787}
   - component: {fileID: 2627875026962421726}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Rabo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,7 +1020,7 @@ GameObject:
   - component: {fileID: 2403697819872501821}
   - component: {fileID: 1596799924947477730}
   - component: {fileID: 4075753005045354491}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Cabeca_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1122,7 +1122,7 @@ GameObject:
   - component: {fileID: 14968176511731302}
   - component: {fileID: 6084227069687059856}
   - component: {fileID: 3165217446820131412}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: CorpoCavalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1226,7 +1226,7 @@ GameObject:
   - component: {fileID: 142022581567374395}
   - component: {fileID: 1037839283938537054}
   - component: {fileID: 285479917724710149}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: PernaAtras_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1285,7 +1285,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 4645239025710078966, guid: 5c2bf483de7812046aac552c3cb86a67,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1328,7 +1328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4171790158228761973}
   - component: {fileID: 5060862147455131867}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Cabeca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1411,7 +1411,7 @@ GameObject:
   - component: {fileID: 200762960686228334}
   - component: {fileID: 7280732968212489733}
   - component: {fileID: 9108317175470812565}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Perna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1514,12 +1514,11 @@ GameObject:
   - component: {fileID: 5016545773240148742}
   - component: {fileID: 4043845839215020627}
   - component: {fileID: 4043845839215020625}
-  - component: {fileID: 4043845839215020624}
   - component: {fileID: 4043845839215020629}
-  - component: {fileID: 4043845839215020628}
-  m_Layer: 0
+  - component: {fileID: 3906002854376997401}
+  m_Layer: 14
   m_Name: ForestBoss
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1588,35 +1587,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12, y: 0.57}
+  m_Offset: {x: -0, y: 0.88}
   serializedVersion: 2
-  m_Radius: 0.35
---- !u!61 &4043845839215020624
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7965304278820443805}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.12, y: 1.06}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.38, y: 1.18}
-  m_EdgeRadius: 0
+  m_Radius: 0.69
 --- !u!95 &4043845839215020629
 Animator:
   serializedVersion: 3
@@ -1636,7 +1609,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4043845839215020628
+--- !u!114 &3906002854376997401
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1645,11 +1618,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7965304278820443805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c87b5585b15ea4469e2b2ef2a62b64a, type: 3}
+  m_Script: {fileID: 11500000, guid: ff255ddeee829ce43b936585ea640d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftWalk: 2
-  rightWalk: 2
+  leftWalk: 10
+  rightWalk: 10
+  velocity: 5
 --- !u!1 &8319619859365538394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,7 +1635,7 @@ GameObject:
   - component: {fileID: 7426011280407227852}
   - component: {fileID: 8941960177038720918}
   - component: {fileID: 5285835040939264109}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: OlhoC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1764,7 +1738,7 @@ GameObject:
   - component: {fileID: 2080127274063005427}
   - component: {fileID: 8218169426551052325}
   - component: {fileID: 3173574988880592194}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: PernaFrente_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

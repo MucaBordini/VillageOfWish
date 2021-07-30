@@ -255,6 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftWalk: 0
   rightWalk: 0
+  velocity: 1
 --- !u!114 &6421406023713008460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +275,7 @@ MonoBehaviour:
     answer2: []
     answer3: []
     answer4: []
+    rightAnswer: 
 --- !u!1 &1450686824472967914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1043,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 4, y: 1.84}
-  m_EdgeRadius: 0.12
+  m_EdgeRadius: 0.06
 --- !u!95 &1854284431237989534
 Animator:
   serializedVersion: 3
@@ -1075,6 +1077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftWalk: 0
   rightWalk: 0
+  velocity: 1
 --- !u!114 &7955357460524997493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1094,3 +1097,4 @@ MonoBehaviour:
     answer2: []
     answer3: []
     answer4: []
+    rightAnswer: 

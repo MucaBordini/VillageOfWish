@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     public bool floor = false;
     private bool playedFall;
+    private int hitBoss = 0;
+    public int playerScene;
+    public int nextScene;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -43,7 +46,7 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
         } else if (collision.gameObject.tag == "EndOfLevel")
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(nextScene);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -54,14 +57,15 @@ public class PlayerController : MonoBehaviour
             floor = true;
         }
 
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Boss")
         {
             
             if (PlayerStats.getIstance().getHealthPoints() >= 1)
             {
                 sounds.PlayOneShot(hurtSound);
                 PlayerStats.getIstance().healthLoss();
-                Destroy(collision.gameObject);
+                if (collision.gameObject.tag == "Enemy")
+                    Destroy(collision.gameObject);
                 if(transform.eulerAngles.y == 180)
                 {
                     rb2d.AddForce(new Vector2(-damageForce, 0), ForceMode2D.Impulse);
@@ -114,7 +118,7 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(WaitFall());
             } else
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(playerScene);
             }
            
             
@@ -131,6 +135,24 @@ public class PlayerController : MonoBehaviour
             hit.collider.gameObject.transform.position += new Vector3(15, 80, 0f) * Time.deltaTime;
             rb2d.AddForce(new Vector2(0, 10), ForceMode2D.Impulse);
         }
+        if (hit && hit.collider.CompareTag("Boss"))
+        {
+            
+                sounds.PlayOneShot(enemySound);
+                rb2d.AddForce(new Vector2(0, 10), ForceMode2D.Impulse);
+                hitBoss++;
+                Debug.Log(hitBoss);
+                if (hitBoss == 3)
+                {
+                    hit.collider.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+                    hit.collider.gameObject.transform.Rotate(0, 0, 180);
+                    hit.collider.gameObject.transform.position += new Vector3(15, 80, 0f) * Time.deltaTime;
+                    hitBoss = 0;
+                    StartCoroutine(WaitEndOfLevel());
+                }
+             
+        }
+
 
         movement = Input.GetAxisRaw("horizontal") * velocidade * Time.deltaTime;
         anim.SetFloat("Speed", Mathf.Abs(movement));
@@ -157,8 +179,15 @@ public class PlayerController : MonoBehaviour
     IEnumerator WaitFall()
     {
         
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(2);
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(playerScene);
     }
+    IEnumerator WaitEndOfLevel()
+    {
+
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(nextScene);
+    }
+
 
 }

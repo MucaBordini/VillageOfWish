@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 90004993513396080}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7758833699484284655}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4572238491298019329}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 5476468218593386017}
   - component: {fileID: 2147760977919471734}
   - component: {fileID: 7695599496270780515}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Cabeca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,9 +208,9 @@ GameObject:
   - component: {fileID: 6968491415421468703}
   - component: {fileID: 2374016018572353335}
   - component: {fileID: 2374016018572353336}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: ForestEnemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -306,6 +306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftWalk: 1
   rightWalk: 1
+  velocity: 1
 --- !u!1 &4687581025772688176
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +318,7 @@ GameObject:
   - component: {fileID: 128967787135081584}
   - component: {fileID: 2867243697404308415}
   - component: {fileID: 3729229333897033159}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Corpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +422,7 @@ GameObject:
   - component: {fileID: 8133108448387259631}
   - component: {fileID: 6253946350839085171}
   - component: {fileID: 8980648587353092906}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Braco2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +524,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2487739453348084824}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,7 +557,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2681878220100983652}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -586,7 +587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5847545970604598327}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +619,7 @@ GameObject:
   - component: {fileID: 4221608877526555844}
   - component: {fileID: 5138006772800742401}
   - component: {fileID: 5145142204465731213}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Perna2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,7 +678,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: -5553519790269436143, guid: 3849e698835f79b4bac300c243ca26af,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -719,7 +720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8341799436880832028}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -752,7 +753,7 @@ GameObject:
   - component: {fileID: 5101978402465059340}
   - component: {fileID: 148798669802511677}
   - component: {fileID: 599021380875335668}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Perna1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -811,7 +812,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 5785070223320203893, guid: 3849e698835f79b4bac300c243ca26af,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -855,7 +856,7 @@ GameObject:
   - component: {fileID: 453446801190132851}
   - component: {fileID: 8060090637618073136}
   - component: {fileID: 8100648272988709247}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Braco1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +958,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8946589887231553895}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
