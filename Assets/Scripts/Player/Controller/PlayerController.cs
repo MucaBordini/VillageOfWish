@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private int hitBoss = 0;
     public int playerScene;
     public int nextScene;
+    private bool menuOn = false;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -99,6 +100,23 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!menuOn)
+            {
+                Time.timeScale = 0;
+                SceneManager.LoadSceneAsync(19, LoadSceneMode.Additive);
+            }
+            else
+            {
+                Time.timeScale = 1;
+                SceneManager.UnloadSceneAsync(20);
+            }
+            menuOn = !menuOn;
+
+
+        }
 
         if ((PlayerStats.getIstance().getHealthPoints() == 0) || transform.position.y < -8)
         {

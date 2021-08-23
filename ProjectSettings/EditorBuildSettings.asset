@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: df4c52c2ab3aba04fb58e44eac006e07
   - enabled: 1
+    path: Assets/Scenes/Cena_inicial01.unity
+    guid: 1da244b61ff43bf4bb274f41aab8324d
+  - enabled: 1
+    path: Assets/Scenes/Cena_inicial02.unity
+    guid: 08792e04c250b4d45b077806c9fb31f8
+  - enabled: 1
+    path: Assets/Scenes/Cena_inicial03.unity
+    guid: da81ab1c3f76e8a4b9eff35b193785f0
+  - enabled: 1
+    path: Assets/Scenes/Cena_inicial04.unity
+    guid: e27fdea72302fe742bfafa75512d977f
+  - enabled: 1
+    path: Assets/Scenes/Cena_inicial5.unity
+    guid: bf2b3cf3f363153458a8113f9073c81f
+  - enabled: 1
     path: Assets/Scenes/Transicao_1.unity
     guid: 2bd06cbb9e5f5e64aa8f5dbde6bb5896
   - enabled: 1
@@ -45,6 +60,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Fase_6.unity
     guid: d479c7f6d92de1048ba8d7bd4e12b97f
   - enabled: 1
+    path: Assets/Scenes/Cena_final01.unity
+    guid: f9f8b6bdbd5ef9f4690583dc5926e689
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 5fbea236556bbc84183fd0bab59f2f8a
+  - enabled: 1
+    path: Assets/Scenes/MenuPause.unity
+    guid: c023eb9149a039b4590eca8164e7b075
   m_configObjects: {}
