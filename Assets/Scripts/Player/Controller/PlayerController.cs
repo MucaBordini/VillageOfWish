@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
             if (!menuOn)
             {
                 Time.timeScale = 0;
-                SceneManager.LoadSceneAsync(19, LoadSceneMode.Additive);
+                SceneManager.LoadSceneAsync(20, LoadSceneMode.Additive);
             }
             else
             {

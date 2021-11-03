@@ -54,4 +54,14 @@
     {
         points -= 100;
     }
+
+    public void setHealth(int health)
+    {
+        healthPoints = health;
+    }
+
+    public void setPoints(int pointsNew)
+    {
+        points = pointsNew;
+    }
 }

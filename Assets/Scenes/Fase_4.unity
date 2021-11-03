@@ -1277,12 +1277,12 @@ PrefabInstance:
     - target: {fileID: 8455002173514769322, guid: bc3be9955f7b1524e92d5c6cf2634beb,
         type: 3}
       propertyPath: raioLargura
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8455002173514769322, guid: bc3be9955f7b1524e92d5c6cf2634beb,
         type: 3}
       propertyPath: deslocamento
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8455002173514769323, guid: bc3be9955f7b1524e92d5c6cf2634beb,
         type: 3}
@@ -2487,12 +2487,12 @@ PrefabInstance:
     - target: {fileID: 8455002173514769322, guid: bc3be9955f7b1524e92d5c6cf2634beb,
         type: 3}
       propertyPath: deslocamento
-      value: -2
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8455002173514769322, guid: bc3be9955f7b1524e92d5c6cf2634beb,
         type: 3}
       propertyPath: raioLargura
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8455002173514769323, guid: bc3be9955f7b1524e92d5c6cf2634beb,
         type: 3}
@@ -12697,7 +12697,7 @@ PrefabInstance:
     - target: {fileID: 5752710273187965366, guid: 212ebe07d264c5840b9af1f0c4da6d6d,
         type: 3}
       propertyPath: playerScene
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5752710273187965366, guid: 212ebe07d264c5840b9af1f0c4da6d6d,
         type: 3}

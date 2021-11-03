@@ -19,6 +19,11 @@ public class DialogManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+
+        if (nextScene == 0)
+        {
+            PlayerPrefs.SetInt("SavedScene", nextScene);
+        }
     }
 
     public void StartDialog(Dialog dialog)

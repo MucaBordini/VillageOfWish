@@ -14,4 +14,11 @@ public class MenuController : MonoBehaviour
     {
         Application.Quit();
     }
+    public void LoadGame()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
+        PlayerStats.getIstance().setHealth(PlayerPrefs.GetInt("SavedHealth"));
+        PlayerStats.getIstance().setPoints(PlayerPrefs.GetInt("SavedPoints"));
+    }
+
 }
